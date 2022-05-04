@@ -4,7 +4,7 @@
       <tr>
         <th style="width: 110px">
           <ExpandMore
-            :ref="(el) => sortExpansionItems.set('id', el)"
+            :ref="(el: any) => sortExpansionItems.set('id', el)"
             prop-name="id"
             text="ID"
             @change-status="sortStatusChange"
@@ -12,7 +12,7 @@
         </th>
         <th style="width: 530px">
           <ExpandMore
-            :ref="(el) => sortExpansionItems.set('title', el)"
+            :ref="(el: any) => sortExpansionItems.set('title', el)"
             prop-name="title"
             text="Заголовок"
             @change-status="sortStatusChange"
@@ -20,7 +20,7 @@
         </th>
         <th>
           <ExpandMore
-            :ref="(el) => sortExpansionItems.set('body', el)"
+            :ref="(el: any) => sortExpansionItems.set('body', el)"
             prop-name="body"
             text="Описание"
             @change-status="sortStatusChange"
