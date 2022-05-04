@@ -6,7 +6,7 @@ export default createRouter({
   routes: [
     { 
       name: 'home',
-      path: '/:pageNum', 
+      path: '/:pageNum?', 
       component: MainPage,
     },
   ]

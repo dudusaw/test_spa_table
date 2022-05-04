@@ -57,6 +57,8 @@ const pageCount = computed<number>(() => {
   const routerPageNum = +router.currentRoute.value.params.pageNum;
   if (routerPageNum > 0 && routerPageNum < pageCount.value) {
     activePage.value = routerPageNum;
+  } else {
+    router.push({ name: "home", params: { pageNum: activePage.value } });
   }
 }
 </script>
